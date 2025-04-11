@@ -1,0 +1,87 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 04, novembro de 2024 às 18:55
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+
+
+Group {  children[#base 
+Transform {
+    translation 0 0 0# Alinhado verticalmente abaixo do segundo retângulo
+    scale 2 0.1 0.4      # Escala para o retângulo
+    children [
+  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.5 0.5 0.5
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box { }
+ }
+
+]}
+#lampada I
+Transform {
+    translation 0 -0.2 0.1 # Alinhado verticalmente abaixo do segundo retângulo
+    rotation 0 0 1 1.57 # Rotação de 90 graus em torno do eixo X
+    scale 0.3 2 0.3      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                    emissiveColor    1 1 1
+                    specularColor    0 0 0
+                    ambientIntensity 0
+                    shininess        0
+                    transparency     0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   1.5
+                radius   0.3
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+#lampada II
+Transform {
+    translation 0 -0.2 -0.1 # Alinhado verticalmente abaixo do segundo retângulo
+    rotation 0 0 1 1.57 # Rotação de 90 graus em torno do eixo X
+    scale 0.3 2 0.3      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                    emissiveColor    1 1 1
+                    specularColor    0 0 0
+                    ambientIntensity 0
+                    shininess        0
+                    transparency     0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   1.5
+                radius   0.3
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}] }

@@ -1,0 +1,883 @@
+#VRML V2.0 utf8
+
+NavigationInfo {
+    headlight TRUE
+    type ["WALK"]
+}
+Viewpoint{
+    position -4 2 0
+    orientation 0 -1 0 1.57
+} 
+ 
+# Luzes da cena
+DirectionalLight {
+    direction 0 -1 0
+    intensity 1
+    color 1 1 1
+}
+
+PointLight {
+    location 0 4 0
+    intensity 0.8
+    color 1 1 0.9
+    radius 20
+}
+
+# Fundo da cena
+Background {
+    skyColor [0 0 0]
+}
+
+# Chão
+Transform {
+    translation 0 0 0
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5  # Cinza 
+                }
+                texture ImageTexture { 
+                    url ["C:/Users/heler/Downloads/chao.jpg"]
+                }
+                textureTransform TextureTransform {
+                    scale 10 10 # Repete 4 vezes no X e 4 vezes no Y
+                }
+            }
+            geometry Box { size 12.5 0.1 15 } 
+        }
+    ]
+}
+
+
+# Teto
+Transform {
+    translation 0 5 0  
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.7 0.7 0.7  # Cinza claro
+                }
+            }
+            geometry Box { size 12.5 0.1 15}  
+        }
+    ]
+}
+
+# METADA CIMA Parede da DIREITA
+Transform {
+    translation 6.25 3.4 0  
+    rotation 0 1 0 1.57  # Rotação de 90 graus
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1
+                }
+            }
+            geometry Box { size 15 3.3 0.1 }  # Escala 2x
+        }
+    ]
+}
+# METADE BAIXO Parede da DIREITA
+Transform {
+    translation 6.25 0.9 0  
+    rotation 0 1 0 1.57  # Rotação de 90 graus
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 1 1  
+                }
+                texture ImageTexture {
+                    url ["C:/Users/heler/Downloads/azuleijoverde.jpeg"]  # Caminho da imagem
+                }
+                textureTransform TextureTransform {
+                    scale 3 3# Repete 5 vezes no X e 5 vezes no Y
+                }
+            }
+            geometry Box { size 15 1.87 0.1 }  # Escala 2x
+        }
+    ]
+}
+
+
+# METADA CIMA Parede da esquerda
+Transform {
+    translation -6.25 3.4 0  
+    rotation 0 1 0 1.57  # Rotação de 90 graus
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1 
+                }
+            }
+            geometry Box { size 15 3.3 0.1 }  # Escala 2x
+        }
+    ]
+}
+# METADE BAIXO Parede da esquerda
+Transform {
+    translation -6.25 0.9 0  
+    rotation 0 1 0 1.57  # Rotação de 90 graus
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 1 1  
+                }
+                texture ImageTexture {
+                    url ["C:/Users/heler/Downloads/azuleijoverde.jpeg"]  # Caminho da imagem
+                }
+                textureTransform TextureTransform {
+                    scale 3 3# Repete 5 vezes no X e 5 vezes no Y
+                }
+            }
+            geometry Box { size 15 1.87 0.1 }  # Escala 2x
+        }
+    ]
+}
+# Lousa
+Transform {
+    children [
+      Inline { url [ " C:\Users\aluno\Documents\Lousa.wrl " ] }
+    ]
+}
+# METADE CIMA Parede do fundo
+Transform {
+    translation 0 3.4 -7.5  # Ajustado para 2x a posição
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1  
+                }
+            }
+            geometry Box { size 12.5 3.3 0.1 }  # Escala 2x
+        }
+    ]
+}
+#METADE BAIXO Parede do fundo
+Transform {
+    translation 0 0.9 -7.5
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0  
+                }
+                texture ImageTexture {
+                    url ["C:/Users/heler/Downloads/azuleijoverde.jpeg"]
+                }
+                textureTransform TextureTransform {
+                    scale 3 3
+                }
+            }
+            geometry Box { size 12.5 1.87 0.1 }
+        }
+    ]
+}
+# METADE CIMA Parede da frente
+Transform {
+    translation 0 3.4 7.5  # Ajustado para 2x a posição
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1  
+                }
+            }
+            geometry Box { size 12.5 3.3 0.1 }  # Escala 2x
+        }
+    ]
+}
+#METADE BAIXO Parede da frente
+Transform {
+    translation 0 0.9 7.5
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0  
+                }
+                texture ImageTexture {
+                    url ["C:/Users/heler/Downloads/azuleijoverde.jpeg"]
+                }
+                textureTransform TextureTransform {
+                    scale 3 3
+                }
+            }
+            geometry Box { size 12.5 1.87 0.1 }
+        }
+    ]
+}
+#Porta
+Transform {
+    children [
+        Transform {
+            scale 0.6 0.6 0.4
+            rotation 0 1 0 -3.1
+            translation -4 1.5 7.45
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\porta.wrl"] }
+            ]
+        }
+    ]
+}
+#gerador
+Transform {
+    children [
+        Transform {
+            scale 0.6 0.4 0.4
+            translation 4 3.75 -7
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Gerador.wrl"] }
+            ]
+        }
+    ]
+}
+
+# Janelas
+Transform {
+    children [
+        # Janela 1
+        Transform {
+            scale 0.8 0.8 0.8
+            translation 6.25 2.35 -6.50
+            rotation 0 1 0 -1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\janelas.wrl"] }
+            ]
+        },
+
+        # Janela 2
+        Transform {
+            scale 0.8 0.8 0.8
+            translation 6.25 2.35 -4.74  # Fixed comma to decimal point
+            rotation 0 1 0 -1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\janelas.wrl"] }
+            ]
+        },
+
+        # Janela 3
+        Transform {
+            scale 0.8 0.8 0.8
+            translation 6.25 2.35 -2.98
+            rotation 0 1 0 -1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\janelas.wrl"] }
+            ]
+        },
+
+        # Janela 4
+        Transform {
+            scale 0.8 0.8 0.8
+            translation 6.25 2.35 -1.22
+            rotation 0 1 0 -1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\janelas.wrl"] }
+            ]
+        },
+
+        # Janela 5
+        Transform {
+            scale 0.8 0.8 0.8
+            translation 6.25 2.35 0.54
+            rotation 0 1 0 -1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\janelas.wrl"] }
+            ]
+        },
+
+        # Janela 6
+        Transform {
+            scale 0.8 0.8 0.8
+            translation 6.25 2.35 2.30
+            rotation 0 1 0 -1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\janelas.wrl"] }
+            ]
+        },
+
+        # Janela 7
+        Transform {
+            scale 0.8 0.8 0.8
+            translation 6.25 2.35 4.06
+            rotation 0 1 0 -1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\janelas.wrl"] }
+            ]
+        }
+    ]
+}
+
+
+Transform {
+    children [
+        # Ventilador 1
+        Transform {
+            translation -1.5 4.5 1.5  # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\ventilador.wrl"] }
+            ]
+        }
+        # Ventilador 2
+        Transform {
+            translation 1.5 4.5 1.5  # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampa.wrl"] }
+            ]
+        }
+
+        # MESAS INICIAL 180
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 4.95 0.5 7 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 3 0.5 7# Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 1.05 0.5 7# Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation -0.9 0.5 7# Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+
+        # MESAS MEIO 180 II
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 4.95 0.5 3.5# Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 3 0.5 3.5 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 1.05 0.5 3.5 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation -0.9 0.5 3.5 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+         }
+        # MESAS sem rotation
+        Transform {
+            scale 0.24 0.24 0.24
+            translation 4.95 0.5 -3.5# Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            translation 3 0.5 -3.5# Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+
+        Transform {
+            scale 0.24 0.24 0.24
+            translation 1.05 0.5 -3.5# Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            translation -0.9 0.5 -3.5 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+
+        # MESAS MEIO 11
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 4.95 0.5 0 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 3 0.5 0 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation 1.05 0.5 0 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            rotation 0 2 0 -3.14
+            translation -0.9 0.5 0 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+         }
+        # MESAS FINAL
+        Transform {
+            scale 0.24 0.24 0.24
+            translation 4.95 0.5 -6.9  # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            translation 3 0.5 -6.9  # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+
+        Transform {
+            scale 0.24 0.24 0.24
+            translation 1.05 0.5 -6.9 # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+        }
+        Transform {
+            scale 0.24 0.24 0.24
+            translation -0.9 0.5 -6.9  # Ajustado para melhor espaçamento
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesa.wrl"] }
+            ]
+         }
+]}
+#lixoso
+Transform {
+    scale 0.5 0.4 0.5
+    translation -6 0.25 6
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lixo.wrl"] }
+            ]
+        }
+#Conexão_Cabos_lampadas
+Transform {
+    children [
+        Transform {
+            scale 1.5 0.4 0.4
+            translation 0 4.8 4
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Conectores de fios.wrl"] }
+            ]
+        }
+    ]
+}
+Transform {
+    children [
+        Transform {
+            scale 1.5 0.4 0.4
+            translation 0 4.8 -4
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Conectores de fios.wrl"] }
+            ]
+        }
+    ]
+}
+Transform {
+    children [
+        Transform {
+            scale 2.5 0.4 0.4
+            rotation 0 1 0 1.5708
+            translation 3 4.8 -2.5
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Conectores de fios.wrl"] }
+            ]
+        }
+    ]
+}
+#conexão_projetor
+Transform {
+    children [
+        Transform {
+            scale 0.75 0.4 0.4
+            translation 1.5 4.8 0
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Conectores de fios.wrl"] }
+            ]
+        }
+    ]
+}
+#gerador_mesas
+Transform {
+    children [
+        Transform {
+            scale 1.4 0.4 0.4
+            translation 3 2 -7.4
+            rotation 0 0 1 1.5708
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Conectores de fios.wrl"] }
+            ]
+        }
+    ]
+}
+#conexão_parede
+Transform {
+    children [
+        Transform {
+            scale 3.7 0.2 0.2
+            translation 6.15 0.26 0  
+            rotation 0 1 0 1.5708
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Conectores de fios.wrl"] }
+            ]
+        }
+    ]
+}
+Group{  children[
+#Lampada 1
+Transform {
+    translation 3 4.8 4
+    rotation 0 1 0 1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampada.wrl"] }
+            ]
+        }
+] }
+Group{ children[
+#Lampada 1
+Transform {
+    translation 3 4.8 4
+    rotation 0 1 0 1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampada.wrl"] }
+            ]
+        }
+#Lampada 2
+Transform {
+    translation 0 4.8 4
+    rotation 0 1 0 1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampada.wrl"] }
+            ]
+        }
+#Lampada 3
+Transform {
+    translation -3 4.8 4
+    rotation 0 1 0 1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampada.wrl"] }
+            ]
+        }
+] }
+Group{  children[
+#Lampada 1
+Transform {
+    translation 3 4.8 -4
+    rotation 0 1 0 1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampada.wrl"] }
+            ]
+        }
+#Lampada 2
+Transform {
+    translation 0 4.8 -4
+    rotation 0 1 0 1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampada.wrl"] }
+            ]
+        }
+#Lampada 3
+Transform {
+    translation -3 4.8 -4
+    rotation 0 1 0 1.57
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Lampada.wrl"] }
+            ]
+        }
+] }
+
+#mesaprof
+Transform {
+    translation -4 1 -4.5 
+    scale 0.5 0.4 0.5
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\mesaprof.wrl"] }
+            ]
+        }
+
+#cadeiras
+ Transform {
+            scale 0.4 0.3 0.4
+            children [
+#cadeiras 1º fileira
+	 Transform {
+                 translation -3 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -1 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 2 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 4 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 7 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 9 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 12 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 14 1.7 15
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+#cadeiras 2º fileira
+	 Transform {
+                 translation -3 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -1 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 2 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 4 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 7 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 9 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 12 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 14 1.7 6
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+#cadeiras 3º fileira
+	 Transform {
+                 translation -3 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -1 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 2 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 4 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 7 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 9 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 12 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 14 1.7 -1.5
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+#cadeiras 4º fileira
+               Transform {
+                 rotation 0 2 0 -3.14
+	   children [
+	 Transform {
+                 translation 3 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 1 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -2 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -4 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -7 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -9 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -12 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -14 1.7 7.2
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+#cadeiras 5º fileira
+	 Transform {
+                 translation 3 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation 1 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -2 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -4 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -7 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -9 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -12 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+	 Transform {
+                 translation -14 1.7 14
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+            ]
+        }
+#cadeira prof
+Transform {
+	   rotation 0 1 0 1.57
+                 translation -12 1.7 -11
+	   children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\cadeira.wrl"] }
+]}
+
+]}
+#Projetor
+Transform {
+      scale 0.8 0.8 0.8
+      translation 0 3.8 0
+      children [
+      Inline { url ["C:\\Users\\aluno\\Documents\\projetor.wrl"] }
+]}
+

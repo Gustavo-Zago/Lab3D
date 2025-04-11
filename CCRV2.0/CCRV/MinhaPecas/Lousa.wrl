@@ -1,0 +1,97 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 04, novembro de 2024 às 19:53
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Group {  children[# Lousa
+Transform {
+    translation -6.15 2.5 0  
+    rotation 0 1 0 1.57  # Rotação de 90 graus
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1  
+                }
+	  texture ImageTexture {
+                    url ["C:/Users/heler/Downloads/lousa.jpg"]  # Caminho da imagem
+                }
+                textureTransform TextureTransform {
+                    scale 3 3# Repete 5 vezes no X e 5 vezes no Y
+                }
+            }
+            geometry Box { size 12 3 0.1 }  
+        }
+    ]
+}
+# apoia apagador esquerdo
+Transform {
+    translation -6 1 5 
+    rotation 0 1 0 1.57  
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1  
+	      specularColor  1 1 1
+                }
+            }
+            geometry Box { size 2 0.2 0.4 }  
+        }
+    ]
+}
+# apoia apagador esquerdo
+Transform {
+    translation -6 1 -5 
+    rotation 0 1 0 1.57  
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1  
+	      specularColor    1 1 1
+                }
+            }
+            geometry Box { size 2 0.2 0.4 }  
+        }
+    ]
+}
+] }
+# Apagador azul
+Transform {
+    translation -6 1.2 -5 
+    rotation 0 1 0 1.57  
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 1
+                    specularColor 1 1 1
+                }
+            }
+            geometry Box { size 0.5 0.1 0.2 }  
+        }
+    ]
+}
+
+# parte preta
+Transform {
+    translation -6 1.1 -5 
+    rotation 0 1 0 1.57  
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0
+                }
+            }
+            geometry Box { size 0.5 0.1 0.2 }  
+        }
+    ]
+}

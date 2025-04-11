@@ -1,0 +1,827 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 09, abril de 2025 às 18:17
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform {
+    translation 0 0 0# Alinhado verticalmente abaixo do segundo retângulo
+    scale 2 0.1 0.1      # Escala para o retângulo
+    children [
+  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.5 0.5 0.5
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box { }
+ }
+
+]}
+
+#bolinhas de cima
+
+
+Transform {
+    translation -1.8 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation -1.6 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -1.4 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -1.2 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -1 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation -0.8 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -0.6 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+
+Transform {
+    translation -0.4 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -0.2 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+
+Transform {
+    translation 0 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.2 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.4 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 0.6 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.8 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 1 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 1.2 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 1.4 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 1.6 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 1.8 0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+#bolinha de baixo
+
+Transform {
+    translation -1.8 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation -1.6 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -1.4 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -1.2 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -1 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation -0.8 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -0.6 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+
+Transform {
+    translation -0.4 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation -0.2 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+
+Transform {
+    translation 0 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.2 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.4 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 0.6 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 0.8 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 1 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 1.2 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 1.4 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 1.6 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+Transform {
+    translation 1.8 -0.1 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+

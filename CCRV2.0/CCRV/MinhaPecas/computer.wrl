@@ -1,0 +1,92 @@
+#VRML V2.0 utf8
+#xyz
+NavigationInfo {
+    headlight TRUE
+    type ["EXAMINE"]
+}
+#parte preta
+Transform {
+    translation 0 2 -0.125  # Alinhado verticalmente abaixo do primeiro retângulo
+    scale 1.5 1.1 0.3    # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0  
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+
+Group {
+    children [
+        # Tela
+        Transform {
+            translation 0 2 0  # Alinhado para cima
+            scale 1.4 1 0.18   # Escala para o retângulo
+            children [
+                Shape {
+                    appearance Appearance {
+                        texture ImageTexture {
+                            url ["C:/Users/heler/Downloads/telaerro.png"]  # Corrigi as barras
+                        }
+                        material Material {
+                            diffuseColor 0 0 1  # Cor azul como base
+                        }
+                    }
+                    geometry Box { }  # Retângulo
+                }
+            ]
+        }
+    ]
+}
+
+
+# Pescoço
+Transform {
+    translation 0 1 -0.1  # Alinhado verticalmente abaixo do primeiro retângulo
+    scale 0.5 1 0.2    # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0  
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+
+# base
+Transform {
+    translation 0 0 0  # Alinhado verticalmente abaixo do segundo retângulo
+    scale 2 0.1 1      # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0  
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+# maquina
+Transform {
+    translation -3 0.35 0  # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.7 0.5 0.9      # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0  # Cor preta
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}] }

@@ -1,0 +1,245 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 04, novembro de 2024 às 21:31
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+#escosto cadeira
+Transform {
+    translation 0 1.5 -0.7 # Posicione a esfera
+    scale 1 1 0.5     
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 1 1
+                    emissiveColor    0 0 0
+                    specularColor    0 0 0
+                    ambientIntensity 0
+                    shininess        0
+                    transparency     0
+                }
+            }
+            geometry Sphere {
+                radius 1          # Define o raio da esfera
+            }
+        }
+    ]
+}
+#banco da cadeira
+Transform {
+    translation 0 0 0 # Posicione a esfera
+    rotation 1 0 0 1.57 
+    scale 1 1 0.5    
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                   diffuseColor 0 1 1
+                    emissiveColor    0 0 0
+                    specularColor    0 0 0
+                    ambientIntensity 0
+                    shininess        0
+                    transparency     0
+                }
+            }
+            geometry Sphere {
+                radius 1          # Define o raio da esfera
+            }
+        }
+    ]
+}
+#detalhe banco
+Transform {
+    translation 0 0 0 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.35 1.5 0.35      # Escala para o retângulo
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor     0 0 0
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      0.1
+                       radius      3
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]}
+
+#detalhe encosto
+Transform {
+    translation 0 1.5 -0.7# Alinhado verticalmente abaixo do segundo retângulo
+    rotation 1 0 0 1.57 
+    scale 0.35 1.5 0.35      # Escala para o retângulo
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor     0 0 0
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      0.1
+                       radius      3
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]}
+
+#perna superior direita
+Transform {
+    translation 0.6 -1 -0.6
+    scale 0.3 2 0.3     
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor     0 0 0
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      0.8
+                       radius      0.3
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]
+}
+#perna superior esquerda
+Transform {
+    translation -0.6 -1 -0.6
+    scale 0.3 2 0.3     
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor     0 0 0
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      0.8
+                       radius      0.3
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]
+}
+#perna inferior direita
+Transform {
+    translation 0.6 -1 0.6
+    scale 0.3 2 0.3     
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor     0 0 0
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      0.8
+                       radius      0.3
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]
+}
+#perna inferior esquerda
+Transform {
+    translation -0.6 -1 0.6
+    scale 0.3 2 0.3     
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor     0 0 0
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      0.8
+                       radius      0.3
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]
+}
+#conexão encosto e assento
+Transform {
+    translation 0 0.8 -1
+    scale 0.3 2 0.3     
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor     0 0 0
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      0.9
+                       radius      0.3
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]
+}

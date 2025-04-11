@@ -1,0 +1,325 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 09, abril de 2025 às 18:58
+# ----------------------------------------------------------------
+
+NavigationInfo {
+    headlight TRUE
+    type ["EXAMINE"]
+}
+
+# Chão
+Transform {
+    translation 0 0 0
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5 
+                }
+            }
+            geometry Box { size 3 0.1 2.2 }  
+        }
+    ]
+}
+
+# Teto
+Transform {
+    translation 0 2.1 0
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5 
+                }
+            }
+            geometry Box { size 3 0.1 2.2 }  
+        }
+    ]
+}
+
+# Parede Esquerda
+Transform {
+    translation -1.4 1.05 0
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5 
+                }
+            }
+            geometry Box { size 0.2 2.1 2.2 }
+        }
+    ]
+}
+
+# Parede Direita
+Transform {
+    translation 1.4 1.05 0
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5 
+                }
+            }
+            geometry Box { size 0.2 2.1 2.2 }
+        }
+    ]
+}
+
+# Parede do Fundo
+Transform {
+    translation 0 1.05 -1.06
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.2 0.2 0.2
+                }
+            }
+            geometry Box { size 2.8 2.1 0.1 }
+        }
+    ]
+}
+
+# Fios vermelhos estáticos
+#fio 1
+Transform {
+    translation 0 0.2 0
+    rotation 0 0 1 1.57
+    scale 0.3 2 0.3      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 0 0
+                    emissiveColor 0.3 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom TRUE
+                height 1.4
+                radius 0.3
+                side TRUE
+                top TRUE
+            }
+        }
+    ]
+}
+
+#fio 2
+Transform {
+    translation 0 1 0
+    rotation 0 0 1 1.57
+    scale 0.3 2 0.3      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 0 0
+                    emissiveColor 0.3 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom TRUE
+                height 1.4
+                radius 0.3
+                side TRUE
+                top TRUE
+            }
+        }
+    ]
+}
+
+#fio 3
+Transform {
+    translation 0 0.5 0
+    rotation 0 0 1 1.57
+    scale 0.3 2 0.3      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 0 0
+                    emissiveColor 0.3 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom TRUE
+                height 1.4
+                radius 0.3
+                side TRUE
+                top TRUE
+            }
+        }
+    ]
+}
+
+#fio 4
+Transform {
+    translation 0 1.3 0
+    rotation 0 0 1 1.57
+    scale 0.3 2 0.3      
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 0 0
+                    emissiveColor 0.3 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom TRUE
+                height 1.4
+                radius 0.3
+                side TRUE
+                top TRUE
+            }
+        }
+    ]
+}
+
+# Pontinhos verdes quadrados piscantes (grade 4x6)
+DEF PontoQuadrado Shape {
+    appearance Appearance {
+        material DEF PontoMaterial Material {
+            diffuseColor 0 0.1 0  # Verde escuro inicial
+            emissiveColor 0 0.5 0
+        }
+    }
+    geometry Box { size 0.1 0.1 0.01 }  # Quadrado fino
+}
+
+# Grade de pontos quadrados (4 linhas x 6 colunas) - posicionada mais para baixo
+Transform {
+    translation 0 0.9 0.8  # Ajustado para baixo (y=0.9)
+    children [
+        # Linha 1 (mais baixa)
+        Transform { translation -1.25 0.0 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.75 0.0 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.25 0.0 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.25 0.0 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.75 0.0 0 children [ USE PontoQuadrado ] },
+        Transform { translation  1.25 0.0 0 children [ USE PontoQuadrado ] },
+        
+        # Linha 2
+        Transform { translation -1.25 0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.75 0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.25 0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.25 0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.75 0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation  1.25 0.4 0 children [ USE PontoQuadrado ] },
+        
+        # Linha 3
+        Transform { translation -1.25 0.8 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.75 0.8 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.25 0.8 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.25 0.8 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.75 0.8 0 children [ USE PontoQuadrado ] },
+        Transform { translation  1.25 0.8 0 children [ USE PontoQuadrado ] },
+        
+        # Linha 4 
+        Transform { translation -1.25 -0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.75 -0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation -0.25 -0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.25 -0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation  0.75 -0.4 0 children [ USE PontoQuadrado ] },
+        Transform { translation  1.25 -0.4 0 children [ USE PontoQuadrado ] },
+    ]
+}
+
+# Vidro frente 
+Transform {
+    translation 0 1.05 1.06
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.8 0.9 1.0
+                    transparency 0.7
+                    specularColor 1 1 1
+                    shininess 0.9
+                }
+            }
+            geometry Box { size 2.8 2.1 0.1 }
+        }
+    ]
+}
+#tranca 
+Transform {
+    translation 1 1 1.07 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    rotation 1 0 0 1.57
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   1
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation 1 1 1.071 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    rotation 1 0 0 1.57
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0.4 0.4 0.4
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.8
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+# fechadura
+Transform {
+    translation 1 1 1.1
+    scale 0.1 0.01 0
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0
+                }
+            }
+            geometry Box { }
+        }
+    ]
+}
+
+# Animação dos pontos verdes
+DEF PiscaPontos TimeSensor {
+    cycleInterval 1.0  # Tempo do ciclo completo (1 segundo)
+    loop TRUE
+}
+
+DEF InterpoladorPontos ColorInterpolator {
+    key [0, 0.5, 1]
+    keyValue [
+        0 0.1 0,   # Verde muito escuro
+        0 1 0,     # Verde brilhante
+        0 0.1 0    # Verde muito escuro
+    ]
+}
+
+# Conexões para a animação
+ROUTE PiscaPontos.fraction_changed TO InterpoladorPontos.set_fraction
+ROUTE InterpoladorPontos.value_changed TO PontoMaterial.diffuseColor

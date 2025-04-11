@@ -1,0 +1,232 @@
+#VRML V2.0 utf8
+#xyz
+NavigationInfo {
+    headlight TRUE
+    type ["EXAMINE"]
+}
+Group {  children[Transform {
+    translation 0 1.7 0
+    children [
+            Inline { url [ " C:\\Users\\aluno\\Documents\\computer.wrl " ] }
+    ]
+}
+Group {  children[
+#tampa da mesa
+Transform {
+    translation 0 1.6 0
+    scale 4 0.08 2   
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1  
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#porta teclado
+Transform {
+    translation 0 1.3 2 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 4 0.08 1      # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 1 1 1  
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#perna mesa superior direita
+Transform {
+    translation 3.5 0 -1.5
+    scale 0.08 1.6 0.08     
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#perna mesa superior esquerda
+Transform {
+    translation -3.5 0 -1.5
+    scale 0.08 1.6 0.08     
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#perna mesa inferior esquerda
+Transform {
+    translation -3.5 0 1.5
+    scale 0.08 1.6 0.08     
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#perna mesa inferior direita
+Transform {
+    translation 3.5 0 1.5
+    scale 0.08 1.6 0.08     
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+# Ligamento entre a perna da mesa inferior esquerda e direita
+Transform {
+    translation 0 -1 -1.5
+    scale 3.55 -0.1 0.08   
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0 
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+# Ligamento entre a perna da mesa superior/inferior direita
+Transform {
+    translation 3.5 -1 0
+    scale 0 -0.1 1.5
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0 
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+# Ligamento entre a perna da mesa superior/inferior esquerda
+Transform {
+    translation -3.5 -1 0
+    scale 0 -0.1 1.5
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0 
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+
+# Cano cinza do trem de fio
+Transform {
+    # Define a posição e orientação do cano
+    translation -2 1.6 -2.1          # Ajuste para a posição desejada
+    rotation 0 0 1 1.57          # Rotaciona o cilindro deitado ao longo do eixo Z (90 graus)
+    scale 0.1 3 0.1              # Ajuste a escala para um cano fino e comprido
+
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5  # Cinza
+                    ambientIntensity 0.3
+                    shininess 0.1
+                }
+            }
+            geometry Cylinder {
+                radius 1             # Define o raio do cilindro (proporção ajustável)
+                height 1             # Comprimento do cilindro (proporção ajustável com scale)
+                side TRUE
+                top TRUE             # Exibe a tampa do cano
+                bottom TRUE
+            }
+        }
+    ]
+}
+# Caixa de tomada do cano cinza
+Transform {
+    translation -0.3 1.6 -2.2
+    scale 0.2 0.2 0.2
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5 
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}] }] }
+# Teclado
+Transform {
+    translation 0 1.35 2  # Acima da porta teclado
+    scale 2.5 0.05 0.6
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.2 0.2 0.2  # Cinza escuro para o teclado
+                }
+            }
+            geometry Box { }
+        }
+    ]
+}
+# Mouse
+Transform {
+    translation 2 1.35 2  # Sobre a mesa, na direita
+    scale 0.3 0.1 0.5
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.1 0.1 0.1  # Cor escura para o mouse
+                }
+            }
+            geometry Sphere { }  # Usando esfera para dar uma forma mais arredondada
+        }
+    ]
+}
+#Conex�o_cabos
+Transform {
+    children [
+        Transform {
+            scale 2 0.4 0.4
+            translation -1 -1 -1.6
+            children [
+                Inline { url ["C:\\Users\\aluno\\Documents\\Conectores de fios.wrl"] }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,175 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 10, abril de 2025 às 18:54
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+#corpo porta
+Transform {
+    translation 0 0 0  # Alinhado verticalmente abaixo do segundo retângulo
+    scale 1.5 3 0.1      # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 1 0.4  
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#maçaneta
+Transform {
+    translation -1 0.2 0.3  # Posicione a esfera
+    scale 1 1 1       
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5
+                    emissiveColor 0 0 0
+                    specularColor 0 0 0
+                    ambientIntensity 0
+                    shininess 0
+                    transparency 0
+                }
+            }
+            geometry Sphere {
+                radius 0.2  # Define o raio da esfera
+            }
+        }
+    ]
+}
+#fechadura
+Transform {
+    translation -1 0.2 0.51 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    rotation 1 0 0 1.57
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.7
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+Transform {
+    translation -1 0.2 0.511 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    rotation 1 0 0 1.57
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0.4 0.4 0.4
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   0.5
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+# fechadura
+Transform {
+    translation -1 0.2 0.54
+    scale 0.02 0.01 0
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0 0
+                }
+            }
+            geometry Box { }
+        }
+    ]
+}
+
+#maçaneta borda
+Transform {
+    translation -1 0.2 0.11 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.1 .1 0.1      
+    rotation 1 0 0 1.57
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0.4 0.4 0.4
+                }
+            }
+            geometry Cylinder {  
+                bottom   TRUE
+                height   0.5
+                radius   2.2
+                side     TRUE
+                top      TRUE
+            }
+        }
+    ]
+}
+
+
+#borda porta esquerda
+Transform {
+    translation -1.7 0.1 0.1  # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.2 3.1 0.1      # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0.2 0
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#borda porta direita
+Transform {
+    translation 1.7 0.1 0.1  # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.2 3.1 0.1      # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0.2 0
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}
+#borda porta cima
+Transform {
+    translation 0 3.1 0.1  # Alinhado verticalmente abaixo do segundo retângulo
+    scale 1.6 0.1 0.1      # Escala para o retângulo
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0 0.2 0
+                }
+            }
+            geometry Box { }  # Retângulo
+        }
+    ]
+}

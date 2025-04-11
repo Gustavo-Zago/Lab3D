@@ -1,0 +1,86 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 04, novembro de 2024 às 20:18
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Group {  children[#base lixo
+Transform {
+    translation 1 1 1 # Alinhado verticalmente abaixo do segundo retângulo
+    scale 0.3 2 0.3      # Escala para o retângulo
+    children [
+          Shape {
+                appearance Appearance {
+ 
+     	material Material {
+         	diffuseColor    0 1 0.4
+         	emissiveColor    0 0 0
+         	specularColor    0 0 0
+         	ambientIntensity 0
+         	shininess        0
+         	transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       height      1.5
+                       radius      3.5
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+    ]
+}
+#TAMPA DO LIXO
+Transform {
+    translation 1 2.4 1 # Posicione a esfera
+    scale 1 1 0.5     # Achate na direção Z para criar uma aparência de meia esfera
+    rotation 1 0 0 1.57 # Rotaciona 90 graus ao redor do eixo X para deitá-la
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 1 0.4
+                    emissiveColor    0 0 0
+                    specularColor    0 0 0
+                    ambientIntensity 0
+                    shininess        0
+                    transparency     0
+                }
+            }
+            geometry Sphere {
+                radius 1.2          # Define o raio da esfera
+            }
+        }
+    ]
+}
+
+#BURACO DO LIXO
+Transform {
+    translation 1 2.75 1 # Posicione a esfera
+    scale 1 1 0.5     # Achate na direção Z para criar uma aparência de meia esfera
+    rotation 1 0 0 1.57 # Rotaciona 90 graus ao redor do eixo X para deitá-la
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor     0 0 0
+                    emissiveColor    0 0 0
+                    specularColor    0 0 0
+                    ambientIntensity 0
+                    shininess        0
+                    transparency     0
+                }
+            }
+            geometry Sphere {
+                radius 0.6         # Define o raio da esfera
+            }
+        }
+    ]
+}] }
+
