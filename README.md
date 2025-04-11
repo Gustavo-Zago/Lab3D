@@ -25,12 +25,12 @@ Desenvolver uma cena completa em **VRML (Virtual Reality Modeling Language)** ut
 
 ## 📸 Demonstração
 
-![Screenshot do projeto](salafrente.jpeg)
-![Screenshot do projeto](diagonal_esquerda.jpeg)
-![Screenshot do projeto](Direita.jpeg)
+![Screenshot do projeto](/salafrente.jpeg.jpeg)
+![Screenshot do projeto](/diagonal_esquerda.jpeg.jpeg)
+![Screenshot do projeto](/Direita.jpeg.jpeg)
 
 > Também tem um vídeo do projeto em ação!  
-> [🎥 Assista aqui](coloca-o-link-do-seu-vídeo.mp4)
+> [🎥 Assista aqui](/VRML_3D.mp4)
 
 ## 🛠️ Ferramentas utilizadas
 
