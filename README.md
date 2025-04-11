@@ -3,7 +3,7 @@
 > Criação de cena 3D utilizando o CCRV — Ambiente de Criação.
 
 ![VRML](https://img.shields.io/badge/VRML-3D-blue)
-![CCRV](https://img.shields.io/badge/CCRV-Univap-green)
+![CCRV](https://img.shields.io/badge/CCRV-VRML-green)
 
 ## 🎯 Objetivo
 
@@ -12,7 +12,7 @@ Desenvolver uma cena completa em **VRML (Virtual Reality Modeling Language)** ut
 ## 🛠️ Tecnologias Utilizadas
 
 - **VRML** (Virtual Reality Modeling Language)
-- **CCRV** (Criador de Cenários de Realidade Virtual) da Univap
+- **CCRV** (Criador de Cenários de Realidade Virtual)
 - **Renderização 3D**
 - Criação e manipulação de nós: `Transform`, `Shape`, `Inline`, `Appearance`, `Material`, etc.
 
@@ -39,7 +39,7 @@ Desenvolver uma cena completa em **VRML (Virtual Reality Modeling Language)** ut
 
 ## 🏫 Créditos
 
-Projeto desenvolvido no laboratório **CCRV - Univap Centro**
+Projeto desenvolvido do laboratório **CCRV - Univap Centro**
 
 Criado por: *Gustavo Zago de Lima*
 
@@ -50,6 +50,7 @@ Este projeto foi desenvolvido como parte da disciplina/prática no **Colégio Un
 ## 📬 Contato
 
 Se quiser conversar sobre **VRML**, projetos de **Realidade Virtual**, ou outras tecnologias 3D, fique à vontade para me chamar!
+[![LinkedIn](https://img.shields.io/badge/Me%20chama%20no-LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/gustavo-zago-de-lima-23459526b/)
 
 ---
 
